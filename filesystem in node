@@ -1,6 +1,6 @@
 const http = require("http");
 const fs = require("fs");
-const port = 8000;
+
 const server = http.createServer(function (req, res) {
   res.writeHead(200, { "content-type": "text/html" });
   fs.readFile("exp3.html", function (error, data) {
@@ -13,10 +13,7 @@ const server = http.createServer(function (req, res) {
     res.end();
   });
 });
-server.listen(port, function (error) {
-  if (error) {
-    console.log("Something went wrong", error);
-  } else {
-    console.log("server is listening on port" + port);
-  }
+server.listen(8000,()=> {
+    console.log('listening')
+
 });
