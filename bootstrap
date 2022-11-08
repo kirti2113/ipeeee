@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="jumbotron text-center">
+<h1>My Weberies Page</h1>
+<p>Some of my favourite web series!!!!</p>
+</div>
+<style>
+.jumbotron {
+background-color: #f4511e; /* Orange */
+color: #ffffff;
+}
+</style>
+<div class="container">
+<ul class="nav nav-tabs" role="tablist">
+<li class="active"><a href="#">Home</a></li>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#">Help</a></li>
+</ul>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-sm-4">
+<h3>The Vampire Diaries</h3>
+<img src="https://tse4.mm.bing.net/th?id=OIP.fTQ-G4aHf5dYO9jvCtznLQHaEK&pid=Api&P=0"
+class="img-responsive"
+<p>The Vampire Diaries is an American supernatural teen drama television series 
+developed by Kevin Williamson and Julie Plec, based on the book series of the same name 
+written by L. J. Smith. The series premiered on The CW on September 10, 2009, and 
+concluded on March 10, 2017, having aired 171 episodes over eight seasons.</p>
+</div>
+<div class="col-sm-4">
+<h3>How I Met Your Mother</h3>
+<img src="https://tse3.mm.bing.net/th?id=OIP.5AozEmVcV2BujO9CE7N6cAHaE8&pid=Api&P=0"
+class="img-responsive"
+<p>How I Met Your Mother (often abbreviated as HIMYM) is an American sitcom, created 
+by Craig Thomas and Carter Bays for CBS. The series, which aired from September 19, 2005 
+to March 31, 2014, follows the main character, Ted Mosby, and his group of friends in New 
+York City's Manhattan.</p>
+</div>
+<div class="col-sm-4">
+<h3>Money Heist</h3>
+<img src="https://tse3.mm.bing.net/th?id=OIP.tyJnyS9qqECLmifpq6vnbgHaEH&pid=Api&P=0"
+class="img-responsive"
+<p>Money Heist (Spanish: La Casa de Papel, lit. 'The House of Paper') is a Spanish 
+heist crime drama media franchise created by Álex Pina. It is centered around a television 
+series which followed two long-prepared heists led by the Professor. The narrative of the 
+series is told in a real-time-like fashion, relying on flashbacks, time-jumps, hidden 
+character motivations, and an unreliable narrator (Tokyo) for complexity.</p>
+</div>
+</div>
+</div>
+</body>
+</html>
 
