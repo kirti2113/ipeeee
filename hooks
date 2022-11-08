@@ -1,71 +1,70 @@
-// Hookusestate.js
-
-import React ,{useState } from 'react';
-const Hook2usestate=()=>{
-const [counter, setCounter] = useState(0);
-const increment=()=>{
-setCounter(counter+1)
-};
-return(
-<div>
-{counter}
-<br></br>
-<button onClick={increment}> INCREMENT</button>
-</div>
-);
-}
-export default Hook2usestate;
-
-//Counterclass.js
+// Counter.js
 
 import React from "react";
-class Counter extends React.Component{
-constructor(props){
-super(props);
-this.state={
-count: 0
-} 
-}
-increment =()=>{
-this.setState({
-count: this.state.count +1
-});
-}
-decrement =()=>{
-this.setState({count: this.state.count -1
-});
-}
-render(){
-return(
-<div>
-<button onClick={this.decrement} className="counter"></button>
-<button onClick={this.increment} className="counter"></button>
-<h1>{this.state.count}</h1>
-</div>
-);
-}
+class Counter extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0,
+    };
+  }
+  increment = () => {
+    this.setState({
+      count: this.state.count + 1,
+    });
+  };
+  decrement = () => {
+    this.setState({ count: this.state.count - 1 });
+  };
+  render() {
+    return (
+      <div>
+        <button onClick={this.decrement} className="counter"></button>
+        <button onClick={this.increment} className="counter"></button>
+        <h1>{this.state.count}</h1>
+      </div>
+    );
+  }
 }
 
 export default Counter;
 
 
-//App.js
+//Hook2useState.js
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-// import ClassComp from './MyComponents/ClassComp';
+import React, { useState } from "react";
+const Hook2usestate = () => {
+  const [counter, setCounter] = useState(0);
+  const increment = () => {
+    setCounter(counter + 1);
+  };
+  return (
+    <div>
+      {counter}
+      <br></br>
+      <button onClick={increment}> INCREMENT</button>
+    </div>
+  );
+};
+export default Hook2usestate;
 
-import Counter from './MyComponents/Counter';
-// import Function from './MyComponents/Function';
-import Hook2usestate from './MyComponents/Hook2usestate';
-ReactDOM.render(
-<Counter/>
-,document.getElementById('root')
-);
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
 
+// App.js
+
+
+import './App.css';
+import Counter from './components/Counter';
+import Hook2usestate from './components/Hookusestate';
+
+function App() {
+  return (
+    <div className="App">
+      <Counter/>
+      <Hook2usestate/>
+         
+    </div>
+  );
+}
+
+export default App;
 
