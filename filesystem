@@ -1,0 +1,14 @@
+const fs = require ('fs');
+
+fs.readFile('sample.txt','utf-8',function(err,data){
+    console.log(data)
+});
+
+fs.writeFile('shunt.js','console.log("done")', function(err){
+    console.log("Data Saved")
+})
+
+fs.appendFile('shunt.js','console.log("don")', function(err){
+        console.log("Data Saved")
+     })
+
